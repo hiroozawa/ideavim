@@ -1,0 +1,44 @@
+set number
+set relativenumber
+set surround
+set ideaput
+set ignorecase
+set clipboard=unnamed
+set ideajoin
+set ReplaceWithRegister
+
+set easymotion
+set NERDTree
+set idearefactormode=keep
+
+" Custom mappings"
+let mapleader = " "
+" Map start rename
+:map <leader>r <Action>(RenameElement)
+" Map the Reformat Code action
+:map <leader>l <Action>(ReformatCode)
+" Map toggle the breakpoint on the current line
+:map <leader>b <Action>(ToggleLineBreakpoint)
+" Map extract method
+:map <leader>m <Action>(ExtractFunction)
+" Map introduce variable
+:map <leader>v <Action>(IntroduceVariable)
+" Map introduce variable
+:map <leader>p <Action>(IntroduceParameter)
+" Map introduce parameter
+:map <leader>f <Action>(IntroduceProperty)
+" Map GotoNextError
+:map <leader>e <Action>(GotoNextError)
+" Map inline
+:map <leader>i <Action>(Inline)
+" Map ChangeSignature
+:map <leader>s <Action>(ChangeSignature)
+
+" Map go forward
+:map <C-k> <Action>(Forward)
+" Map go back
+:map <C-j> <Action>(Back)
+
+" NerdTree configurations"
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
