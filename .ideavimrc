@@ -29,16 +29,24 @@ let mapleader = " "
 :map <leader>f <Action>(IntroduceProperty)
 " Map GotoNextError
 :map <leader>e <Action>(GotoNextError)
+" Map GotoPreviousError
+:map <leader>E <Action>(GotoPreviousError)
 " Map inline
 :map <leader>i <Action>(Inline)
 " Map ChangeSignature
 :map <leader>s <Action>(ChangeSignature)
-
+" Map to implementation
+:map ga <Action>(GotoImplementation)
+" Map  RollbackChangedLines
+:map <leader>z <Action>(Vcs.RollbackChangedLines)
 " Map go forward
 :map <C-k> <Action>(Forward)
 " Map go back
 :map <C-j> <Action>(Back)
-
+" Map go ShowHistoryForBlock
+:map <leader>h <Action>(Vcs.ShowHistoryForBlock)
+" Map go ShowTabbedFileHistory
+":map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
 " NerdTree configurations"
 let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
