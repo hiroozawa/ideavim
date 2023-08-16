@@ -45,8 +45,15 @@ let mapleader = " "
 :map <C-j> <Action>(Back)
 " Map go ShowHistoryForBlock
 :map <leader>h <Action>(Vcs.ShowHistoryForBlock)
-" Map go ShowTabbedFileHistory
-":map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+" Map logcat
+:map <leader>4 <Action>(ActivateLogcatToolWindow)
+" Map Run
+:map <leader>a <Action>(Run)
+" Map Run
+:map <leader>a <Action>(Run)
+" Map Run Class
+:map <leader>j <Action>(Run)
+
 " NerdTree configurations"
 let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
